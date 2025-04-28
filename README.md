@@ -51,6 +51,6 @@ Upon analysis I could not find any missing values or outliers in the data provid
 
 ## Considerations for further work
 If we were going into production and given more time, I would:
-- Spend more time on the orchestration, giving each stage it's own error catching rather than using a single try/except block.
+- Spend more time on the orchestration, giving each stage its own error catching rather than using a single try/except block.
 - Use a more sophisticated approach to the reporting of outliers/missing values, rather than outputting a simple JSON report.
 - Make some hard-coded values configurable, for example the number of standard deviations that determines an outlier or the range for the rolling median window used during imputation.
