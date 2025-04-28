@@ -14,13 +14,18 @@ Silver: Cleaned data, with missing values and outliers addressed
 Gold: Summary statistics, Anomaly detection results 
 Database: Holds the above two datasets in a SQLite database
 
-## Code
-ingestion.py (Bronze): Concatenates and loads data with schema validation.
-cleaning.py (Silver): Two-stage data cleaning (missing values, outliers).
-analytics.py (Gold): Summary statistics and anomaly detection.
-database.py (Database): Table creation and save to database function.
-main.py (Orchestrator): Pipeline orchestration.
-utils.py: Common functions.
+## Code Overview
+`ingestion.py` (Bronze): Concatenates and loads data with schema validation.
+
+`cleaning.py` (Silver): Two-stage data cleaning (missing values, outliers).
+
+`analytics.py` (Gold): Summary statistics and anomaly detection.
+
+`database.py` (Database): Table creation and save to database function.
+
+`main.py` (Orchestrator): Pipeline orchestration.
+
+`utils.py`: Common functions.
 
 ## Description 
 This is my implementation of the pipeline that cleans and analyses data for wind turbines. I have used a basic medallion architecture to persist the data at each stage, alongside JSON reports found in `reports/` to summarise changes made and issues found. 
