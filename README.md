@@ -6,13 +6,14 @@
 ## Testing:
 - Run the unit tests with `python -m pytest tests/`
 
-## Pipeline:
+## Pipeline Process:
 `Source → Bronze → Silver → Gold → Database`
-Source: Raw CSV files
-Bronze: Concatenated data in parquet format
-Silver: Cleaned data, with missing values and outliers addressed
-Gold: Summary statistics, Anomaly detection results 
-Database: Holds the above two datasets in a SQLite database
+
+- Source: Raw CSV files
+- Bronze: Concatenated data in parquet format
+- Silver: Cleaned data, with missing values and outliers addressed
+- Gold: Summary statistics, Anomaly detection results 
+- Database: Holds the above two datasets in a SQLite database
 
 ## Code Overview
 `ingestion.py` (Bronze): Concatenates and loads data with schema validation.
